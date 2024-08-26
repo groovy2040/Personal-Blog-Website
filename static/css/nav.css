@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 0 30px;
+    flex-wrap: wrap;
+
+    &>div {
+        display: flex;
+        gap: 50px;
+    }
+
+    &>* {
+        padding: 10px
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    div{
+        position:relative;
+        input {
+            height: 25px;
+            padding-left:10px;
+            &:focus+span, &:hover+span{
+                display: none;
+            }
+        }
+        span{
+            position: absolute;
+            right:13px;
+        }
+    }
+
+}

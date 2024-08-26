@@ -1,0 +1,7 @@
+.grid-layout {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 132px auto 1fr 100px;
+    position: relative;
+    overflow-y: hidden;
+}
